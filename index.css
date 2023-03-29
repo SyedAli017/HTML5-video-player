@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   background-image: url(Images/background-image.jpg);
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -16,6 +15,9 @@
   backdrop-filter: blur(10px);
 }
 
+.video {
+    max-width: 500px;
+}
 .title {
   text-align: center;
 }
@@ -27,4 +29,17 @@
 a {
   text-decoration: none;
   color: #444fff;
+}
+
+@media screen and (max-width: 550px) {
+    .video {
+        width: 250px;
+        margin: 10px;
+
+    }
+
+    .video-player {
+        width: 280px;
+
+    }
 }
