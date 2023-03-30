@@ -15,8 +15,34 @@
   backdrop-filter: blur(10px);
 }
 
+.video-box {
+  position: relative;
+}
+.controls {
+  font-size: 20px;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  justify-content: space-between;
+  color: beige;
+}
+
+.left-side-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.right-side-controls {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  left: 410px;
+  bottom: 10px;
+}
+
 .video {
-    max-width: 500px;
+  max-width: 500px;
 }
 .title {
   text-align: center;
@@ -32,14 +58,12 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-    .video {
-        width: 250px;
-        margin: 10px;
+  .video {
+    width: 250px;
+    margin: 10px;
+  }
 
-    }
-
-    .video-player {
-        width: 280px;
-
-    }
+  .video-player {
+    width: 280px;
+  }
 }
